@@ -1,0 +1,12 @@
+
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: ضع-التوكن-هنا
+      - key: OPENAI_API_KEY
+        value: ضع-مفتاح-OpenAI-هنا
